@@ -25,7 +25,7 @@ public class ProducerDemo {
 
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
 
-        ProducerRecord<String, String> producerRecord = new ProducerRecord<>("first_topic", "my love");
+        ProducerRecord<String, String> producerRecord = new ProducerRecord<>("java_demo", "radrodyyyy");
         producer.send(producerRecord);
         producer.flush();
         producer.close();
